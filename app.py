@@ -2,9 +2,8 @@ import folium
 import streamlit as st
 from streamlit_folium import st_folium
 import requests, json
-import os
 
-os.environ['api_key'] = st.secrets['api_key']
+api_key = st.secrets['api_key']
 
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
