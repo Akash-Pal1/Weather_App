@@ -9,7 +9,7 @@ with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
 
 st.title("Weather App")
-
+st.write("This weather app provides real-time updates on temperature, humidity, pressure, and wind speed. Stay informed about the current weather conditions with detailed descriptions of your favorite city.")
 
 city_name = st.text_input('Enter the city name','Delhi, IN')
 
